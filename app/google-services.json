@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "674546100360",
+    "project_id": "sfedu-project",
+    "storage_bucket": "sfedu-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674546100360:android:60ee5c7365a73bf3a1d73d",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674546100360-9fupvdkng4s9fk1naa0jckjjvl6a6f47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgb1tUYDU991tvgaXKhXQ5XusDj2fTV5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674546100360-9fupvdkng4s9fk1naa0jckjjvl6a6f47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
