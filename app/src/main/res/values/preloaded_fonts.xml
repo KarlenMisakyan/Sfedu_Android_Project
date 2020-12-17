@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/overpass_mono</item>
+        <item>@font/overpass_mono_light</item>
+        <item>@font/press_start_2p</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_thin</item>
+    </array>
+</resources>

@@ -5,11 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 
 import androidx.annotation.NonNull;
 
@@ -19,11 +15,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.w3c.dom.Text;
-
-import java.util.regex.Pattern;
-
-public class RegisterUser extends AppCompatActivity implements View.OnClickListener {
+public class UserRegister extends AppCompatActivity implements View.OnClickListener {
 
     private TextView banner, registerUser;
     private EditText editTextFullName, editTextNickName, editTextEmail, editTextPassword;
@@ -50,7 +42,6 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         editTextEmail = (EditText) findViewById(R.id.email_reg);
         editTextPassword = (EditText) findViewById(R.id.password_reg);
 
-        progressBar = (ProgressBar) findViewById(R.id.progress_reg);
 
     }
 
@@ -125,19 +116,15 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                                 public void onComplete(@NonNull Task<Void> task) {
 
                                     if(task.isSuccessful()) {
-                                        Toast.makeText(RegisterUser.this, "User has been registered successfully!", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.GONE);
-
+                                        Toast.makeText(UserRegister.this, "User has been registered successfully!", Toast.LENGTH_LONG).show();
                                         //redirect to Login Layout
                                     }else{
-                                        Toast.makeText(RegisterUser.this, "Failed to register", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.GONE);
+                                        Toast.makeText(UserRegister.this, "Failed to register", Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
                         } else {
-                            Toast.makeText(RegisterUser.this, "Failed to register", Toast.LENGTH_LONG).show();
-                            progressBar.setVisibility(View.GONE);
+                            Toast.makeText(UserRegister.this, "Failed to register", Toast.LENGTH_LONG).show();
                         }
                     }
                 });
